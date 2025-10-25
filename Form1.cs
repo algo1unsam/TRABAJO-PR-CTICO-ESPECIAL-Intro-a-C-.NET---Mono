@@ -15,9 +15,9 @@ namespace Figuras
             InitializeComponent();
             figuras = new Figura[3] 
             {
-                new Circulo(60),
+                new Circulo(20),
                 new Rectangulo(30,50),
-                new Cuadrado(45),
+                new Cuadrado(60),
             };
 
         }
@@ -25,10 +25,13 @@ namespace Figuras
         private void button1_Click(object sender, EventArgs e)
         {
             Graphics gr = pictureBox1.CreateGraphics();
-            Pen pen = new Pen(Color.Red);
+            Random rnd = new Random();
             for (int i = 0; i < figuras.Length; i++)
             {
-                figuras[i].Dibujar(pen,gr,i * 100, 50);
+
+                Color color = Color.FromArgb(rnd.Next(0, 256), rnd.Next(0, 256), rnd.Next(0, 256));
+                Pen pen = new Pen(color);
+                figuras[i].Dibujar(pen, gr, i * 100, 50);
             }
 
         }
