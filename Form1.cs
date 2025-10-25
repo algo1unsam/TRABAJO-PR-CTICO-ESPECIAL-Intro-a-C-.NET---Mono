@@ -13,11 +13,13 @@ namespace Figuras
         public Form1()
         {
             InitializeComponent();
-            figuras = new Figura[3] 
+            figuras = new Figura[5]
             {
                 new Circulo(20),
                 new Rectangulo(30,50),
                 new Cuadrado(60),
+                new TrianguloEquilatero(70),
+                new TrianguloIsosceles(80,80)
             };
 
         }

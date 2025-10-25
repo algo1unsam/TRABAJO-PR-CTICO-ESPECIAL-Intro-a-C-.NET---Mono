@@ -35,9 +35,9 @@
             // 
             // dibujarButton
             // 
-            this.dibujarButton.Location = new System.Drawing.Point(500, 234);
+            this.dibujarButton.Location = new System.Drawing.Point(50, 520);
             this.dibujarButton.Name = "dibujarButton";
-            this.dibujarButton.Size = new System.Drawing.Size(75, 23);
+            this.dibujarButton.Size = new System.Drawing.Size(100, 30);
             this.dibujarButton.TabIndex = 0;
             this.dibujarButton.Text = "Dibujar";
             this.dibujarButton.UseVisualStyleBackColor = true;
@@ -47,7 +47,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(59, 13);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(365, 227);
+            this.pictureBox1.Size = new System.Drawing.Size(900, 500);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -55,7 +55,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 291);
+            this.ClientSize = new System.Drawing.Size(1000, 600); 
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dibujarButton);
             this.Name = "Form1";
